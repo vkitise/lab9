@@ -23,9 +23,9 @@ public class StudentMarksServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         try {
-            String url = "jdbc:mysql://localhost:3306/employee";
-            String user = "root";
-            String password = "Shreyas@2005";
+            String url = "jdbc:mysql://192.168.151.53:3306/employee";
+            String user = "deekshith";
+            String password = "Cherry@0826";
             Class.forName("com.mysql.cj.jdbc.Driver");
             connect = DriverManager.getConnection(url, user, password);
             String query = "SELECT * FROM StudentMarks WHERE USN = ?";
